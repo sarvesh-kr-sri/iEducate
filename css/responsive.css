@@ -1,0 +1,55 @@
+@media only screen and (max-width:1300px){
+    .navbar{
+        transition: all 0.7s ease-out;
+        flex-direction: column;
+        height: 490px;
+    }
+    .navlist{
+        margin-top: 5px;
+        flex-direction: column;
+        height: 100%;
+    }
+    .rightnav{
+        text-align: center;
+        margin: 0;
+    }
+    #search{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 65px;
+    }
+    .v-class{
+        display: none;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        text-align: center;
+        margin: 50px 15px;
+        padding: 0;
+    }
+    #contact-box form{
+        width: 80%;
+    }
+    .course{
+        width: 400px;
+    }
+    .imgfluid{
+        width:300px;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .para{
+        margin: 20px 10px;
+        padding: 0;
+    }
+    .firstsection{
+        height: 100vh;
+    }
+}

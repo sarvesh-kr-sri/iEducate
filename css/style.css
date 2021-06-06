@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:hover{
+    transition: .3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: sticky;
+    align-items: center;
+    top: 0;  
+}
+.firstsection::before{
+    content: "";
+    background-image: url('../img/bg1.jpeg') ;
+    background-size: cover;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-blend-mode: darken;
+}
+.firstsection::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    z-index: -1;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navlist{
+    width: 70%;
+    display: flex;
+    align-items: center;   
+}
+.navlist li{
+    padding: 23px 30px;
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+     font-family: 'Cairo', sans-serif;
+}
+.navlist li a:hover{
+    text-decoration: none;
+    color: crimson;
+}
+.rightnav{
+   margin: 10px 30px 0 0;
+    width: 30%;
+    text-align: right;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: whitesmoke;
+    height: 4px;
+    margin: 5px 5px;
+}
+#search{
+    margin-right: 15px;
+    padding: 8px 17px;
+    font-size: 15px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    outline: none;
+}
+.btn{
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 20px;
+    font-size:15px;
+    margin:0 5px 5px 0;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid crimson;
+    color: crimson;
+}
+.firstsection{
+    height: 100vh;
+    color: whitesmoke;
+}
+.box-main{
+    height: 75%;
+    max-width: 50%;
+    margin: auto 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.firstHalf{
+    width: 90%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 85%;
+    border-radius: 150px;
+    border: 4px solid whitesmoke;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 33px;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: whitesmoke;
+}
+.text-small{
+    font-size: 17px;
+    padding: 20px 0px;
+    font-family: 'Cairo', sans-serif;
+    line-height: 25px;
+}
+/* .wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 66%;
+    flex-direction: column;
+  }
+.wrapper input[type=file]{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 100%;
+    opacity: 0; 
+} */
+.section{
+    display: flex;
+    max-width: 80%;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.section-left{
+    flex-direction: row-reverse;
+    max-width: 80%;
+}
+.para{
+    padding: 0px 65px;
+}
+.sectiontag{
+    color: black;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    padding:10px 20px;
+    border: none;
+    text-align: left;
+    transition: 0.4s;
+  }
+.accordion svg{
+    margin-top: 4px;
+    float: right;
+}
+#up{
+    display: none;
+}
+.accordion:hover {
+    background-color: #ccc; 
+  }
+.panel {
+    padding: 2px 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.thumbnail img{
+    height: 280px;
+    width: 320px;
+    box-shadow: 10px 9px 14px grey;
+    border-radius: 20px;
+}
+.courses-list{
+    background-color: black;
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 50px 0;
+    max-width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imgfluid{
+    width: 250px;
+    height: 100%;
+}
+.courses-list h3{
+    padding: 20px;
+}
+.courses-list button{
+    border-radius: 12px;
+    margin-top: -2px;
+}
+.courses-list button:hover{
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+}
+.course{
+    height: 450px;
+    border-radius: 0px;
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    width: 320px;
+    background:whitesmoke;
+    margin: 20px 40px;
+}
+.center{
+    padding: 40px 0;
+    text-align: right;
+    color: whitesmoke;
+}
+#contact{
+    font-family: 'Cairo', sans-serif;
+    height: 700px; 
+    margin-right: 60px; 
+    color: whitesmoke;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('/img/contact.jpg') no-repeat center center/cover;
+}
+#contact-box {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-bottom: 20px;  
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input, fieldset, textarea{
+   border-radius: 12px;
+   text-align: right;
+   border: 2px solid whitesmoke;
+   background: none;
+    width: 100%;
+    font-size: 1rem;
+    margin: 3px ;
+    color: whitesmoke;
+    padding: 0.8rem ;
+    outline: none;
+}
+#contact-box textarea{
+    border: none;
+}
+.submit{
+    display: block;
+    height: 40px;
+    margin: 20px auto;
+    background-color: crimson;
+    border: 2px solid crimson;
+    width: 50%;
+    color: whitesmoke;
+} 
+.submit:hover{
+    border: 2px solid whitesmoke;
+    background: none;
+    color: whitesmoke;
+} 
+footer{
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px 20px;
+}
